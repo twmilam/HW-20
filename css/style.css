@@ -1,0 +1,1291 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body{ Font-family: 'roboto';
+
+
+}
+
+/* NAVIGATION*/
+.navGrid {
+    display: grid;
+    height: 70px;
+    
+    grid-template-columns: 5% 15% 79%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+    grid-template-rows: 1fr;
+    background-color: #ffffff;
+    grid-template-areas: 
+      "icon title content";
+    }
+  
+    .nav1 {
+        grid-area: icon;
+        padding-left: 40px;
+        margin-top: 10px;
+        }
+
+    .logo {
+        margin: 10px;
+        width: 3%;
+        padding:1%; 
+        display:inline;
+        cursor:pointer;
+        }
+    
+    .myName {
+        grid-area: title;
+        font-weight: 400;
+        color: #2b2b2b;
+        padding: 20px;
+        margin-left: 0%;
+        padding-right: 45px;
+        align-items:baseline;
+        cursor:pointer;
+        
+        }
+  
+  
+  .content {
+    grid-area: content;
+    display: grid; 
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: Flex-end;
+    padding: 20px;
+    }
+
+
+  .nestedGrid {
+   
+   padding: 3px;
+   padding-right: 50px;
+   font-weight: 300;
+   color: rgb(128, 128, 128);
+   cursor:pointer;
+   text-decoration: none !important;
+  }
+
+  .nestedGrid:hover {
+
+
+    color: #47d9ec;
+    
+  }
+
+   .workMenu {
+   
+    padding: 3px;
+    padding-right: 50px;
+    font-weight: 300;
+    color: rgb(128, 128, 128);
+    cursor:pointer;}
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+   
+    .workMenu:hover {
+
+
+        color: #47d9ec;
+        
+      }
+
+
+    
+    
+  /* HERO ABOUT ME*/
+    
+        
+        
+    .aboutMeHeroContent {
+        display: grid;
+         width:800px;
+        height: 400px; 
+        margin-top: 20px;
+        margin-left: -8%; 
+        padding: 25%;
+        z-index: 1;
+        
+        /*background-image:  url("../images/HP_Background.jpg");*/
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 60% 50%;
+        background-size: 98%;
+        /*outline: 1px solid red;*/
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 20% 30% 40% 10%;
+        grid-template-areas:
+        "img1Port HelloTitle"
+        "img1Port TomName"
+        "img1Port pDescript"
+        "img1Port learnMore";
+                    
+}
+        
+        
+    .img10 {
+        display:flex;
+        grid-area: img1Port;
+        border-radius: 50%;
+        justify-content:left;
+        align-content: flex-start;
+        border: 8px solid #ffffff;
+        z-index: 10;
+        
+    }
+
+    .Hello5 { 
+        display:flex;
+        width: 120%;
+        
+        grid-area: HelloTitle;
+        font-weight: 700; 
+        font-size: 350%;
+        color: #5CECFF;
+        
+    }
+
+        .myNameTom {
+            display:grid; 
+            
+         
+            grid-area: TomName;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr;
+             grid-template-areas:
+            "Namelist1"
+            "Namelist2";
+                    
+            margin-top: 2%;
+            font-weight: 400; 
+            font-size: 200%;
+            color: #ffffff;
+            z-index: 1;
+            }
+
+            .Name-11 { width: 200%;
+                grid-area: Namelist1;
+                z-index: 1;
+                
+            
+            }
+
+                .Name-22 { width: 200%;
+                    grid-area: Namelist2;
+                    margin-top: -2.25%;
+                    z-index: 1;
+                    
+                }   
+            
+
+            .myStoryTelling { 
+                display:flex;
+                grid-area: pDescript;
+                margin-top: 2%;
+                font-weight: 400;
+                line-height: 140%; 
+                font-size: 130%;
+                width: 90%;
+                color: #5CECFF;
+                z-index: 1;
+            
+            }
+
+                .button {
+                    grid-area: learnMore;
+                    display:flex;
+                    margin-top: 6%;
+                    font-weight: 400; 
+                    font-size: 125%;
+                    padding-right: 17%;
+                    justify-content:flex-end ;
+                    color: #5CECFF;
+                    cursor:pointer;
+                    z-index: 1;
+                    
+                    
+                
+                }
+
+                .button:hover { 
+
+                        color: #ffffff;
+
+
+                }
+
+                .mtnBackground {
+                    
+                    position: relative;
+                    left: -110%;
+                    top: -450%;
+                    z-index: -10;
+                    margin-bottom: -20%;
+                    
+                      /* Set rules to fill background */
+ }
+
+                    
+                    
+                    
+            
+
+  
+  /* FOOTER SOCIAL LINKS*/
+  .footerContainer {
+    
+    display: grid;
+    height: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    Font-family: 'roboto'; 
+    font-weight: 400; 
+    font-size: 100%;
+    color: #2b2b2b;
+    margin: 1%;
+    display:flex;
+    justify-content: center;
+    grid-template-areas: 
+    "IG Pin LI";
+    }   
+
+    .footer1{
+        grid-area: IG;
+        padding-right: 2%;
+        font-weight: 400; 
+        font-size: 100%;
+        align-items: center;
+        margin-top: -18%;
+        color: rgb(128, 128, 128);
+        cursor:pointer;
+    }
+    
+    .footer2{
+        grid-area: Pin;
+          font-weight: 400; 
+          font-size: 100%;
+          padding-right: 2%;
+          color: rgb(128, 128, 128);
+          margin-top: -18%;
+          cursor:pointer;
+        }
+          
+    .footer3{
+        grid-area: LI;
+        font-weight: 400; 
+        font-size: 100%;
+        color: rgb(128, 128, 128);
+        margin-top: -18%;
+        cursor:pointer;
+    }
+
+/* ANIMATION*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        display: flex;
+        justify-content: center;
+        margin-top: -18%;
+        grid-template-areas:
+        "arrow preload";
+    }
+
+    .bounceMe {
+        animation: bounceArrow .9s infinite;
+        display: flex;
+        align-items: center;
+        
+        }
+
+
+      @keyframes bounceArrow {
+        from {
+            transform: translate3D(0px, 0px, 0px);
+        }
+        
+        to {transform: translate3D(0px, 10px, 0px);
+        }
+
+    }
+/* MY WORK USING CSS GRID*/
+
+   
+    .backToTop {
+        text-align: center;
+        Margin-top: 5%;
+       
+        justify-content: center;
+        color: rgb(128, 128, 128);
+       Font-family: 'roboto'; 
+       font-weight: 400; 
+       font-size: 120%;
+    }
+
+    .backToTop:hover {
+    color:#47d9ec;
+
+
+    }
+    
+    
+    
+    
+    
+    .myWorkTitle { 
+            
+        text-align: center;
+        Margin-top: 5%;
+       
+        justify-content: center;
+        color: rgb(128, 128, 128);
+       Font-family: 'roboto'; 
+       font-weight: 400; 
+       font-size: 120%;
+                  
+
+}
+   
+
+.workGrid { display: grid;
+           margin: 2%;
+           grid-template-columns: 50% 50%;
+           grid-template-rows:1fr 1fr 1fr;
+           /*outline: 1px solid red;*/
+           padding-top: 1%;
+           padding-left: 1%;
+           margin-left: 5%;
+           margin-right: 5%;
+           border: 1px solid rgb(189, 189, 189);
+           grid-template-areas:
+            "img1 projName1"
+            "img2 projName2"
+            "img3 projName3";
+            
+}
+
+
+
+.workPhoto { 
+   width: 100%;
+   padding-bottom: 2%;
+   cursor:pointer;
+
+
+}
+
+
+.categoryGridPhoto1 { 
+   grid-area: img1;
+   
+   
+
+}
+
+.workContainerText1 { 
+   grid-area: projName1;
+   padding-bottom: 2%;
+   
+}
+
+.categoryGridPhoto2  { 
+   grid-area: img2;
+   
+
+}
+
+.workContainerText2 { 
+   grid-area: projName2;
+   padding-bottom: 2%;
+   
+}
+
+.categoryGridPhoto3  { 
+   grid-area: img3;
+   
+
+}
+
+.workContainerText3 { 
+   grid-area: projName3;
+   padding-bottom: 2%;
+   
+}
+
+
+.workTitle { 
+    /*outline: 1px solid red;*/
+   color: rgb(128, 128, 128);
+   font-weight: 400; 
+   font-size: 25px;
+   padding: 1%;
+   margin-top: 8%;
+   margin-left: 5%;
+}
+
+.workDescript { 
+   /*outline: 1px solid red;*/
+   color: rgb(128, 128, 128);
+   font-weight: 200; 
+   font-size: 15px;
+   padding: 1%;
+   margin-left: 5%;
+}
+
+.button1{
+   Background-color: #ffffff;
+   border: 2px solid rgb(196, 196, 196);
+   text-decoration: none;
+   padding: 1%;
+   margin-left: 6%;
+   margin-top: 3%;
+   color: rgb(128, 128, 128);
+   font-weight: 400; 
+   font-size: 15px;
+   cursor:pointer;}
+
+   .button1:hover{
+    color: #47d9ec;
+    border: 2px solid #47d9ec;
+
+
+   }
+   
+   /*outline: 1px solid red;*/
+   
+
+
+
+.viewProj {  
+   display:flex;
+   text-align: center;
+   margin-top: 2%; 
+   justify-content:center;
+   color: rgb(128, 128, 128);
+   font-weight: 400; 
+   font-size: 120%; }
+
+
+
+/* MY SKILLS USING FLEX*/
+
+    .mySkillsType { 
+        margin-top: 15%;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 120%;
+         
+    
+    }
+
+    .skillsContainer {
+        Display: flex;
+        height: 550px;
+        margin-left: 2%;
+        margin-right: 2%;
+         /*outline: 1px solid red;*/
+                        
+    }
+
+    .skillOne  { width: 33%;
+        
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+    }
+        .uxDesign {
+        color: rgb(128, 128, 128);
+         font-weight: 400; 
+         font-size: 150%;
+         margin-top: 3%;
+         padding: 6%;
+         text-align:center;
+                
+                }
+                
+        .uxDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+                
+     }
+
+    .skillTwo { width: 33%; 
+        /*outline: 1px solid red;*/
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+}
+
+        .uiDesign {
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 150%;
+        margin-top: 3%;
+        padding: 6%;
+        text-align:center;
+    }
+
+        .uiDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+}
+
+
+
+
+    .skillThree { width: 33%;
+        /*outline: 1px solid red;*/
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+}
+
+
+        .brandID {
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 150%;
+        margin-top: 3%;
+        padding: 6%;
+        text-align:center;
+    
+        }
+
+        .brandIDDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+
+    }
+
+
+/* ABOUT ME SECTION / MY SKILLS USING FLEX GRID */
+
+.aboutMe {display:flex;
+    text-align: center;
+    margin-top: 15%; 
+    justify-content: center;
+    color: rgb(128, 128, 128);
+    
+   font-weight: 400; 
+   font-size: 120%; }
+   
+   
+   .aboutMeContainer { 
+        display: grid;
+        margin: 2%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 25% 25%;
+        /*outline: 1px solid red;*/
+        padding: 1%;
+        grid-template-areas:
+         "me1 me2"
+         "aboutmeText aboutmeText" 
+         "aboutmeText2 aboutmeText2";
+    }
+
+    .aboutme1{
+        Grid-area: me1;
+        padding-left:40%;
+        width: 100%;
+        }
+
+
+    .aboutme2{
+        Grid-area: me2;
+        padding-left:4%;
+        width: 100%;
+
+    }
+
+
+#aboutMeExplain {
+    Grid-area: aboutmeText;
+     display: flex;
+    color: rgb(128, 128, 128);
+    justify-content: center;
+    
+    Margin: 5%;
+    padding-right: 15%;
+    line-height: 150%;
+    padding-left: 15%;
+    font-weight: 300; 
+    font-size: 100%;
+    margin-top: 0%;
+    justify-content:center;
+    /*outline: 1px solid red;*/}
+
+
+ 
+#AboutMe3 { 
+        Grid-area: aboutmeText2;
+         display: flex;
+        color: rgb(128, 128, 128);
+        justify-content: center;
+        
+        Margin: 5%;
+        padding-right: 15%;
+        line-height: 150%;
+        padding-left: 15%;
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: -1%;
+        justify-content:center;
+        /*outline: 1px solid red;*/}
+
+     
+     
+ 
+ 
+  .backToTop{
+     flex:grid;           
+    background-color: #ffffff;
+    align-items: bottom;
+    position: sticky;
+
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        @media only screen and (max-width: 600px) { 
+
+
+    /* MEDIA Q - NAV SECTION */
+
+    .navGrid {
+        display: grid;
+        height: 200px;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 25;
+        grid-template-areas: 
+          "icon"
+          "title" 
+          "content";
+        }
+      
+        .nav1 {
+            grid-area: icon;
+            
+            display:flex;
+            justify-content:center;
+            
+            }
+
+            .img10 {
+                display:flex;
+                grid-area: img1Port;
+                border-radius: 50%;
+                justify-content:center;
+                border: 8px solid #ffffff;
+                z-index: 10;
+                width: 150px;
+                height: 150px;
+                
+            }
+
+          
+    
+        .logo {
+            display:flex;
+            margin: 10px;
+            width: 3%;
+            padding:1%;
+            margin-right: 20%;
+            margin-top: 10px; 
+            display:inline;
+            }
+        
+        .myName {
+            grid-area: title;
+            display:flex;
+            font-weight: 400;
+            color: #2b2b2b;
+            margin-top: -4%;
+            justify-content:center;
+            align-items:baseline;
+            
+            }
+      
+      
+      .content {
+        grid-area: content;
+        display: grid; 
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        padding: 20px;
+        }
+    
+    
+      .nestedGrid {
+       
+       padding: 3px;
+       padding-right: 15px;
+       font-weight: 300;
+       color: rgb(128, 128, 128);}
+    
+       .workMenu {
+       
+        padding: 3px;
+        padding-right: 15px;
+        font-weight: 300;
+        color: rgb(128, 128, 128);}
+        
+/* MEDIA Q - HERO SECTION */
+
+
+    .aboutMeHeroContent {
+        display: grid;
+         width:600px;
+        height:800px; 
+        margin-top: 150px;
+        margin-left: -8%; 
+        padding: 25%;
+        z-index: 1;
+        background-image:  url("../images/HP_Background2.jpg");
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 98%;
+        /*outline: 1px solid red;*/
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "img1Port"
+        "HelloTitle"
+        "TomName"
+        "pDescript"
+        "learnMore";
+        }
+
+        .img1 {
+            display:flex;
+            grid-area: img1Port;
+            border-radius: 50%;
+            justify-content:center;
+            align-content: center;
+            border: 8px solid #ffffff;
+            z-index: 10;
+            
+        }
+    
+        .Hello5 { 
+            display:flex;
+            width: 120%;
+            margin-top: 3%;
+            margin-left: -5%;
+            
+            grid-area: HelloTitle;
+            font-weight: 700; 
+            font-size: 200%;
+            color: #5CECFF;
+            
+        }
+    
+            .myNameTom {
+                display:grid; 
+                margin-left: -5%;
+                
+             
+                grid-area: TomName;
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr;
+                 grid-template-areas:
+                "Namelist1"
+                "Namelist2";
+                        
+                margin-top: 2%;
+                font-weight: 400; 
+                font-size: 200%;
+                color: #ffffff;
+                z-index: 1;
+                }
+    
+                .Name-11 { width: 100%;
+                    grid-area: Namelist1;
+                    z-index: 1;
+                    font-size: 75%;
+                    
+                
+                }
+    
+                    .Name-22 { width: 100%;
+                        grid-area: Namelist2;
+                        margin-top: 0.5%;
+                        z-index: 1;
+                        font-size: 75%;
+                        
+                    }   
+                
+    
+                .myStoryTelling { 
+                    display:flex;
+                    grid-area: pDescript;
+                    margin-top: 2%;
+                    font-weight: 400;
+                    line-height: 140%; 
+                    font-size: 130%;
+                    width: 45%;
+                    color: #5CECFF;
+                    z-index: 1;
+                    margin-left: -5%;
+                
+                }
+    
+                    .button {
+                        grid-area: learnMore;
+                        display:flex;
+                        margin-top: 6%;
+                        font-weight: 400; 
+                        font-size: 125%;
+                        padding-right: 40%;
+                        justify-content:flex-end ;
+                        color: #5CECFF;
+                        z-index: 1;
+                        
+                    
+                    }
+
+        .mtnBackground {
+            
+                    
+            background-position: -9999px -9999px;
+            z-index: -10;
+            margin-bottom: -20%;}
+
+  /* FOOTER SOCIAL LINKS*/
+  .footerContainer {
+    
+    display: grid;
+    height: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    Font-family: 'roboto'; 
+    font-weight: 400; 
+    font-size: 100%;
+    color: #2b2b2b;
+    
+    margin: 1%;
+    display:flex;
+    justify-content: center;
+    grid-template-areas: 
+    "IG Pin LI";
+    }   
+
+    .footer1{
+        grid-area: IG;
+        padding-right: 2%;
+        font-weight: 400; 
+        font-size: 100%;
+        align-items: center;
+        margin-top: -40%;
+        color: rgb(128, 128, 128);
+        cursor:pointer;
+    }
+    
+    .footer2{
+        grid-area: Pin;
+          font-weight: 400; 
+          font-size: 100%;
+          padding-right: 2%;
+          color: rgb(128, 128, 128);
+          margin-top: -40%;
+          cursor:pointer;
+        }
+          
+    .footer3{
+        grid-area: LI;
+        font-weight: 400; 
+        font-size: 100%;
+        color: rgb(128, 128, 128);
+        margin-top: -40%;
+        cursor:pointer;
+    }
+
+/* ANIMATION*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        display: flex;
+        justify-content: center;
+        margin-top: -18%;
+        grid-template-areas:
+        "arrow preload";
+    }
+
+    .bounceMe { display: none;
+       
+        
+        }
+
+
+      @keyframes {
+        from {
+            transform: translate3D(0px, 0px, 0px);
+        }
+        
+        to {transform: translate3D(0px, 10px, 0px);
+        }
+
+    }
+
+            /* MEDIA Q - WORK SECTION */
+
+
+
+
+
+
+
+.myWorkTitle { 
+
+   
+        
+    text-align: center;
+   
+    justify-content: center;
+    color: rgb(128, 128, 128);
+   Font-family: 'roboto'; 
+   font-weight: 400; 
+   font-size: 120%;
+              
+
+}
+            .workGrid { 
+                display: grid;
+                grid-template-columns: 100%;
+                height: 1200px;
+                padding-top: 0%;
+            
+                padding-left: 0%;
+               
+                border: 0px solid rgb(189, 189, 189);
+                grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas:
+            
+                "img1" 
+                "projName1"
+                "img2" 
+                "projName2"
+                "img3" 
+                "projName3"; }
+
+              
+                
+
+
+               
+                 
+                 
+                 .categoryGridPhoto1 { 
+                    grid-area: img1;
+                    
+                    
+                    
+                    }
+                 
+                 .workContainerText1 { 
+                    grid-area: projName1;
+                    margin-top: -15%;
+                    
+                    
+                    
+                    }
+                 
+                 
+                 
+               .categoryGridPhoto2  { 
+                    grid-area: img2;
+                    margin-top: -5%;
+                    }
+                 
+                 .workContainerText2 { 
+                    grid-area: projName2;
+                    margin-top: -20%;
+                  }
+
+
+                 
+                 .categoryGridPhoto3  { 
+                    grid-area: img3;
+                }
+                 
+                 .workContainerText3 { 
+                    grid-area: projName3;
+                    margin-top: -15%;
+                    }
+                 
+                 
+                 .workTitle { 
+                     /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 25px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .workDescript { 
+                    /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 200; 
+                    font-size: 15px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .button1 {
+                    Background-color: #ffffff;
+                    border: 2px solid rgb(196, 196, 196);
+                    text-decoration: none;
+                    
+                    margin-left: 1%;
+                    
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 15px;
+                    align-content: center;
+                    
+                    /*outline: 1px solid red;*/
+                    
+                 
+                 }
+                 
+                 .viewProj {  
+                    display:flex;
+                    text-align: center;
+                    margin-top: 2%; 
+                    justify-content:center;
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 120%; }
+
+
+
+                
+                
+/* MEDIA Q - SKILLS SECTION */
+
+            .mySkillsType { 
+                margin-top: 15%;
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                color: rgb(128, 128, 128);
+                font-weight: 400; 
+                font-size: 120%;
+                }
+        
+    .skillsContainer {
+                Display: grid;
+                height: 1000px;
+                margin-left: 2%;
+                margin-right: 16%;
+                grid-template-columns:100%;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                 /*outline: 1px solid red;*/
+                }
+        
+        .skillOne  { width: 100%;
+                
+                justify-content:center;
+                margin: 3%;
+                padding: 1%;
+                padding: 6%;
+                text-align:center;
+                border: 1px solid rgb(189, 189, 189);
+                }
+                .uxDesign {
+                color: rgb(128, 128, 128);
+                 font-weight: 400; 
+                 font-size: 150%;
+                 margin-top: 3%;
+                 padding: 6%;
+                 text-align:center;
+                }
+                        
+                .uxDescript {
+                color: rgb(128, 128, 128);
+                font-weight: 300; 
+                font-size: 100%;
+                margin-top: 1%;
+                text-align:center;
+                }
+        
+        .skillTwo { width: 100%; 
+                /*outline: 1px solid red;*/
+                justify-content:center;
+                margin: 3%;
+                padding: 1%;
+                padding: 6%;
+                text-align:center;
+                border: 1px solid rgb(189, 189, 189);
+                }
+        
+                .uiDesign {
+                color: rgb(128, 128, 128);
+                font-weight: 400; 
+                font-size: 150%;
+                margin-top: 3%;
+                padding: 6%;
+                text-align:center;
+                }
+        
+                .uiDescript {
+                color: rgb(128, 128, 128);
+                font-weight: 300; 
+                font-size: 100%;
+                margin-top: 1%;
+                text-align:center;
+                }
+        
+        
+        
+        
+        .skillThree { width: 100%;
+                /*outline: 1px solid red;*/
+                justify-content:center;
+                margin: 3%;
+                padding: 1%;
+                padding: 6%;
+                text-align:center;
+                border: 1px solid rgb(189, 189, 189);
+                }
+        
+        
+                .brandID {
+                color: rgb(128, 128, 128);
+                font-weight: 400; 
+                font-size: 150%;
+                margin-top: 3%;
+                padding: 6%;
+                text-align:center;
+                }
+        
+                .brandIDDescript {
+                color: rgb(128, 128, 128);
+                font-weight: 300; 
+                font-size: 100%;
+                margin-top: 1%;
+                text-align:center;
+                }
+
+/* MEDIA Q - ABOUT ME SECTION */
+      
+            .aboutMeContainer { 
+            display: grid;
+            margin: 0%;
+            height: 1400px;
+            grid-template-columns:100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: 1%;
+            grid-template-areas:
+            "me1" 
+            "me2"
+            "aboutmeText"
+            "aboutmeText2";
+            }
+
+
+            .aboutme1{
+                Grid-area: me1;
+                padding-left:1%;
+                padding-top: 2%;
+                width: 100%;
+                }
+        
+        
+            .aboutme2{
+                Grid-area: me2;
+                padding-left:1%;
+                padding-top: 3%;
+                width: 100%;
+        
+            }
+      
+            #aboutMeExplain {
+                Grid-area: aboutmeText;
+                 display: flex;
+                color: rgb(128, 128, 128);
+                justify-content: center;
+                
+                Margin: 5%;
+                padding-right: 3%;
+                line-height: 170%;
+                padding-left: 0%;
+                font-weight: 300; 
+                font-size: 100%;
+                margin-top: 4%;
+                justify-content:center;
+                /*outline: 1px solid red;*/}
+            
+            
+             
+            #AboutMe3 { 
+                    Grid-area: aboutmeText2;
+                     display: flex;
+                    color: rgb(128, 128, 128);
+                    justify-content: center;
+                    
+                    Margin: 5%;
+                    padding-right: 3%;
+                    line-height: 170%;
+                    padding-left: 0%;
+                    font-weight: 300; 
+                    font-size: 100%;
+                    margin-top: 0%;
+                    justify-content:center;
+                    /*outline: 1px solid red;*/}    
+   }                   
